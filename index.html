@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Dashboard Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/dashboard.css" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- 单页面容器入口，会被根组件App替换掉 -->
+    <div id="app"></div>
+
+    <script src="node_modules/vue/dist/vue.js"></script>
+    <script src="node_modules/vue-router/dist/vue-router.js"></script>
+    <script src="components/layout/Navbar.js"></script>
+    <script src="components/layout/Sidebar.js"></script>
+    <script src="components/home/Home.js"></script>
+    <script src="App.js"></script>
+    <!-- main.js文件里要用到App.js文件中定义的全局组件App，所以App.js需要在main.js之前调用 -->
+    <script src="router/index.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
